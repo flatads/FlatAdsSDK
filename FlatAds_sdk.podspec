@@ -7,36 +7,45 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'FlatAds_sdk'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of FlatAds_sdk.'
+    s.name         = "FlatAds_sdk"
+    s.version      = "1.0.0"
+    s.summary      = "Flat Ads SDK for iOS"
+    s.description  = <<-DESC
+                       Flat Ads SDK for iOS
+                     DESC
+    s.homepage     = "https://github.com/flatads/FlatAdsSDK"
+    s.license      = "MIT"
+    s.author       = { "FlatAds Team" => "flatincbr.dev@gmail.com" }
+    
+    s.platform     = :ios, "10.0"
+    s.source       = { :git => "https://github.com/flatads/FlatAdsSDK.git", :tag => s.version }
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+    s.platform = :ios, "10.0"
+    s.ios.deployment_target = "10.0"
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+    s.libraries = "c++"
+    s.requires_arc = true
+    s.static_framework = true
 
-  s.homepage         = 'https://github.com/flatads/FlatAds_sdk'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'flatads' => 'chenwh02@flatincbr.com' }
-  s.source           = { :git => 'https://github.com/flatads/FlatAds_sdk.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+    s.frameworks = 'AdSupport', 'CoreTelephony'
 
-  s.ios.deployment_target = '9.0'
+    s.pod_target_xcconfig = {
+        'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+    }
+    s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
-  s.source_files = 'FlatAds_sdk/Classes/**/*'
+    s.source_files  = "FlatAds_sdk", "FlatAds_sdk/Classes/**/*"
+
+    s.vendored_frameworks = "FlatAds_sdk/**/*.{framework}"
+    
+    s.dependency "AFNetworking", "4.0.1"
+    s.dependency "FMDB", "2.6.2"
+    s.dependency "MJExtension", "3.2.2"
+    s.dependency "Masonry", "1.1.0"
+    s.dependency "GoogleAds-IMA-iOS-SDK", "3.14.3"
+    s.dependency "YYWebImage", "1.0.5"
+    s.dependency "YYImage/WebP", "1.0.4"
+    s.dependency "TCUtil", "~> 1.0.0"
+    s.dependency "TCFoundation", "~> 1.0.0"
   
-  # s.resource_bundles = {
-  #   'FlatAds_sdk' => ['FlatAds_sdk/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
