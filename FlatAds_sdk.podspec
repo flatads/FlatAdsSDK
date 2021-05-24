@@ -34,7 +34,9 @@ Pod::Spec.new do |s|
     }
     s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
-    s.source_files  = "FlatAds_sdk", "FlatAds_sdk/Classes/**/*"
+    s.resource_bundles = {
+        'FlatAds_sdk' => ['FlatAds_sdk/**/*.xcassets']
+    }
 
     s.vendored_frameworks = "FlatAds_sdk/**/*.{framework}"
     
@@ -45,7 +47,5 @@ Pod::Spec.new do |s|
     s.dependency "GoogleAds-IMA-iOS-SDK", "3.14.3"
     s.dependency "YYWebImage", "1.0.5"
     s.dependency "YYImage/WebP", "1.0.4"
-    s.dependency "TCUtil", "~> 1.0.0"
-    s.dependency "TCFoundation", "~> 1.0.0"
   
 end

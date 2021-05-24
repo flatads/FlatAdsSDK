@@ -13,11 +13,14 @@
 
 #import "FAAdBaseView.h"
 
-#import "FAInfoIconButton.h"
-
 NS_ASSUME_NONNULL_BEGIN
 
 @class FAAdNativeView;
+
+typedef NS_ENUM(NSUInteger, FAInfoIconButtonExpanPosition) {
+    FAInfoIconButtonExpanPositionLeft = 0,
+    FAInfoIconButtonExpanPositionRight
+};
 
 typedef void(^FALoadNativeAdBlock)(FAAdNativeView * _Nullable nativeView, NSError *_Nullable error);
 
@@ -59,7 +62,7 @@ typedef void(^FALoadNativeAdBlock)(FAAdNativeView * _Nullable nativeView, NSErro
 @property (nonatomic, readonly, strong) UILabel *contentLabel;
 
 /// info button
-@property (nonatomic, readonly, strong) FAInfoIconButton *infoIconButton;
+@property (nonatomic, readonly, strong) UIView *infoIconView;
 
 /// call to action button
 @property (nonatomic, readonly, strong) UIButton *ctaButton;
@@ -67,6 +70,8 @@ typedef void(^FALoadNativeAdBlock)(FAAdNativeView * _Nullable nativeView, NSErro
 /// close button
 @property (nonatomic, readonly, strong) UIButton *closeButton;
 
+/// the info Icon expan position
+@property (nonatomic, assign) FAInfoIconButtonExpanPosition expanPosition;
 
 /// Load ad data
 /// @param unitModel unitModel

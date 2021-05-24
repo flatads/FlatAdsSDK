@@ -16,11 +16,10 @@ FOUNDATION_EXPORT const unsigned char FlatAds_sdkVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <FlatAds_sdk/PublicHeader.h>
 
-#import <TCFoundation/TCFoundation.h>
-
 #import "FlatAdsSDK.h"
 
 #import "FAAdUnitModel.h"
+
 
 #import "FAAdBannerUnitModel.h"
 #import "FAAdBannerView.h"
@@ -29,5 +28,4 @@ FOUNDATION_EXPORT const unsigned char FlatAds_sdkVersionString[];
 
 #import "FAInterstitialAd.h"
 
-#import "FAAdRewardUnitModel.h"
-#import "FARewardedAd.h"
+
