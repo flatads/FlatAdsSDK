@@ -48,11 +48,10 @@ typedef void(^FALoadInterstitialAdBlock)(FAInterstitialAd * _Nullable interstiti
 /// @param completion request completion
 + (void)loadWithAdUnitModel:(FAAdUnitModel *)unitModel completionHandler:(FALoadInterstitialAdBlock)completion;
 
-/**
- Display interstitial ad.
- @param rootViewController : root view controller for displaying ad.
- @return : whether it is successfully displayed.
- */
+/// Display interstitial ad.
+/// @param rootViewController : root view controller for displaying ad.
+/// @return : whether it is successfully displayed.
+
 - (BOOL)presentAdFromRootViewController:(UIViewController *)rootViewController;
 
 @end

@@ -39,9 +39,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface FAAdBannerView : FAAdBaseView
 
-/**
- * Reference to the object that implements FABannerAdViewDelegate protocol; will receive load events for the given unitId.
- */
+@property (nonatomic, readonly, strong) FAAdBannerUnitModel *unitModel;
+
+/// Reference to the object that implements FABannerAdViewDelegate protocol; will receive load events for the given unitId.
 @property (nonatomic, weak, nullable) id<FABannerAdViewDelegate> delegate;
 
 - (instancetype)initWithUnitModel:(FAAdBannerUnitModel *)model;

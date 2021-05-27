@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSUInteger, FAAdBannerSizeType) {
     FAAdBannerSizeType320x50, // 320x50
-    FAAdBannerSizeType320x250, // 320x250
+    FAAdBannerSizeType300x250, // 320x250
 };
 
 @interface FAAdBannerUnitModel : FAAdUnitModel

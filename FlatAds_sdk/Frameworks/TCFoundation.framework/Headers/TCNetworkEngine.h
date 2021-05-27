@@ -5,7 +5,7 @@
 //  Created by EkoHu on 2021/3/17.
 //
 
-#import <AFNetworking/AFSecurityPolicy.h>
+#import "AFSecurityPolicy.h"
 #import <TCUtil/TCUtilMacro.h>
 #import "TCNetworkRequest.h"
 #import "TCDebugHTTPModel.h"
