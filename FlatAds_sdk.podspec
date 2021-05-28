@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name         = "FlatAds_sdk"
-    s.version      = "1.0.1"
+    s.version      = "1.0.0"
     s.summary      = "Flat Ads SDK for iOS"
     s.description  = <<-DESC
                        Flat Ads SDK for iOS

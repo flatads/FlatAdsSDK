@@ -24,9 +24,14 @@
  */
 
 #import <Foundation/Foundation.h>
-#import "AFNetworking.h"
-#import <TCUtil/TCUtil.h>
 #import "TCNetworkRequestProtocol.h"
+
+@class AFSecurityPolicy;
+@class AFMultipartFormData;
+@class AFHTTPSessionManager;
+
+@protocol AFMultipartFormData;
+
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -62,7 +67,7 @@ NS_ASSUME_NONNULL_BEGIN
 /****************************************************/
 #pragma mark Pool
 /****************************************************/
-+(nonnull NSString*)poolID  TC_PURE_VIRTUAL;                // must provided
++(nonnull NSString*)poolID;                // must provided
 +(nullable NSURL*)baseURL;                                  // default - nil
 +(AFSecurityPolicy*)policy;                                 // default - nil
 +(NSUInteger)concurrentCount;                               // default - 4

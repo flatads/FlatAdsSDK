@@ -58,7 +58,10 @@
 
 #import "TCSqliteORMModelProtocol.h"
 #import "TCSqliteORMSessionProtocol.h"
-#import <TCUtil/TCUtil.h>
+
+@class TCBlackWhiteList;
+
+#import "TCFMacro.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

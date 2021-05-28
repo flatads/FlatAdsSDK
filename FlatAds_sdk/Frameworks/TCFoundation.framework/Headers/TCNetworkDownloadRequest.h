@@ -10,7 +10,6 @@
  * 这里只是扩展了一下请求参数
  */
 
-#import <TCUtil/TCUtil.h>
 #import "TCNetworkRequestProtocol.h"
 #import "TCNetworkRequest.h"
 
