@@ -8,14 +8,17 @@
 
 #import "FAAppDelegate.h"
 #import <TCFoundation/TCFoundation.h>
+
 #import <FlatAds_sdk/FlatAds_sdk.h>
+
+
 @implementation FAAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    
-    [FlatAdsSDK setAppID:@"" appToken:@""];
+    [TCFileUtil alloc];
+//    [FlatAdTCRawDataRequestSerializer.oSDK setAppID:@"" appToken:@""];
     return YES;
 }
 

@@ -37,6 +37,9 @@ Pod::Spec.new do |s|
     s.resource_bundles = {
         'FlatAds_sdk' => ['FlatAds_sdk/**/*.xcassets']
     }
+    
+    s.public_header_files = 'FlatAds_sdk/Classes/*.h'
+    s.source_files = 'FlatAds_sdk/Classes/*.{m,mm}'
 
     s.vendored_frameworks = "FlatAds_sdk/**/*.{framework}"
     
