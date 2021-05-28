@@ -7,6 +7,7 @@
 //
 
 #import "FAAppDelegate.h"
+#import <TCFoundation/TCFoundation.h>
 #import <FlatAds_sdk/FlatAds_sdk.h>
 @implementation FAAppDelegate
 

@@ -32,6 +32,7 @@ FOUNDATION_EXPORT const unsigned char TCFoundationVersionString[];
 #import "TCLogMacro.h"
 #import "TCLogger.h"
 #import "TCLogModel.h"
+#import "TCLogHelper.h"
 #import "TCLogCapture.h"
 #import "TCLogManager.h"
 
