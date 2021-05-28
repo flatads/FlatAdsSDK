@@ -10,9 +10,12 @@
  */
 
 #import <Foundation/Foundation.h>
-#import <AFNetworking/AFNetworking.h>
+
 #import "TCNetworkRequestProtocol.h"
 #import "TCNetworkRequest.h"
+
+#import "AFSecurityPolicy.h"
+#import "AFHTTPSessionManager.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

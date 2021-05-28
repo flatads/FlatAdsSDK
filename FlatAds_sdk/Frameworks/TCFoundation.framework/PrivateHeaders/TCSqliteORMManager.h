@@ -5,7 +5,9 @@
 //  Created by EkoHu on 2021/3/16.
 //
 
-#import "FMDB.h"
+#import <Foundation/Foundation.h>
+
+#import "FMDatabase.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

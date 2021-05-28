@@ -9,6 +9,8 @@
 #import "TCNetworkRequest.h"
 #import "TCDebugHTTPModel.h"
 
+#import "AFSecurityPolicy.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol TCNetworkEngineProtocol <NSObject>

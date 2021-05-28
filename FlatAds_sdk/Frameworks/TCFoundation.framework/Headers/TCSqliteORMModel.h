@@ -59,7 +59,7 @@
 #import "TCSqliteORMModelProtocol.h"
 #import "TCSqliteORMSessionProtocol.h"
 
-@class TCBlackWhiteList;
+#import <TCUtil/TCBlackWhiteList.h>
 
 #import "TCFMacro.h"
 
