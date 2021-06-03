@@ -49,7 +49,7 @@ Pod::Spec.new do |s|
     s.dependency "AFNetworking", "~> 4.0.1"
     s.dependency "FMDB", "~> 2.6.2"
     
-    s.dependency "TCFoundation", "~> 1.0.1"
+    s.dependency "TCFoundation", "~> 1.0.2"
   
     s.dependency "MJExtension", "~> 3.2.2"
     s.dependency "Masonry", "~> 1.1.0"
