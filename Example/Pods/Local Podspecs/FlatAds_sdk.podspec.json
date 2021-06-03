@@ -1,6 +1,6 @@
 {
   "name": "FlatAds_sdk",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "summary": "Flat Ads SDK for iOS",
   "description": "Flat Ads SDK for iOS",
   "homepage": "https://github.com/flatads/FlatAdsSDK",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/flatads/FlatAdsSDK.git",
-    "tag": "1.0.2"
+    "tag": "1.0.4"
   },
   "libraries": "c++",
   "requires_arc": true,
@@ -30,7 +30,6 @@
     "CoreMedia"
   ],
   "pod_target_xcconfig": {
-    "OTHER_LDFLAGS": "-ObjC",
     "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64",
     "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES": "YES"
   },
@@ -52,7 +51,7 @@
       "~> 2.6.2"
     ],
     "TCFoundation": [
-      "~> 1.0.1"
+      "~> 1.0.2"
     ],
     "MJExtension": [
       "~> 3.2.2"

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name         = "FlatAds_sdk"
-    s.version      = "1.0.3"
+    s.version      = "1.0.4"
     s.summary      = "Flat Ads SDK for iOS"
     s.description  = <<-DESC
                        Flat Ads SDK for iOS
@@ -30,7 +30,6 @@ Pod::Spec.new do |s|
     s.frameworks = 'Foundation', 'Security', 'WebKit','SystemConfiguration', 'CoreTelephony', 'MobileCoreServices', 'AppTrackingTransparency', 'AVFoundation','CoreMedia'
     
     s.pod_target_xcconfig = {
-        'OTHER_LDFLAGS' => '-ObjC',
         'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
         'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'
     }

@@ -17,7 +17,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    [TCFileUtil alloc];
+
 //    [FlatAdTCRawDataRequestSerializer.oSDK setAppID:@"" appToken:@""];
     return YES;
 }
