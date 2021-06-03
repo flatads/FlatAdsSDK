@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name         = "FlatAds_sdk"
-    s.version      = "1.0.0"
+    s.version      = "1.0.2"
     s.summary      = "Flat Ads SDK for iOS"
     s.description  = <<-DESC
                        Flat Ads SDK for iOS
@@ -27,28 +27,37 @@ Pod::Spec.new do |s|
     s.requires_arc = true
     s.static_framework = true
 
-    s.frameworks = 'AdSupport', 'CoreTelephony'
-
+    s.frameworks = 'Foundation', 'Security', 'WebKit','SystemConfiguration', 'CoreTelephony', 'MobileCoreServices', 'AppTrackingTransparency', 'AVFoundation','CoreMedia'
+    
     s.pod_target_xcconfig = {
-        'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+        'OTHER_LDFLAGS' => '-ObjC',
+        'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
+        'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'
     }
-    s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+    
+    s.user_target_xcconfig = {
+        'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
+        'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'
+    }
 
     s.resource_bundles = {
         'FlatAds_sdk' => ['FlatAds_sdk/**/*.xcassets']
     }
     
-    s.public_header_files = 'FlatAds_sdk/Classes/*.h'
-    s.source_files = 'FlatAds_sdk/Classes/*.{m,mm}'
+#    s.public_header_files = 'FlatAds_sdk/Classes/*.h'
+#    s.source_files = 'FlatAds_sdk/Classes/*.{m,mm}'
 
     s.vendored_frameworks = "FlatAds_sdk/**/*.{framework}"
     
-    s.dependency "AFNetworking", "4.0.1"
-    s.dependency "FMDB", "2.6.2"
-    s.dependency "MJExtension", "3.2.2"
-    s.dependency "Masonry", "1.1.0"
-    s.dependency "GoogleAds-IMA-iOS-SDK", "3.14.3"
-    s.dependency "YYWebImage", "1.0.5"
-    s.dependency "YYImage/WebP", "1.0.4"
+    s.dependency "AFNetworking", "~> 4.0.1"
+    s.dependency "FMDB", "~> 2.6.2"
+    
+    s.dependency "TCFoundation", "~> 1.0.1"
+  
+    s.dependency "MJExtension", "~> 3.2.2"
+    s.dependency "Masonry", "~> 1.1.0"
+    s.dependency "GoogleAds-IMA-iOS-SDK", "~> 3.14.3"
+    s.dependency "YYWebImage", "~> 1.0.5"
+    s.dependency "YYImage/WebP", "~> 1.0.4"
   
 end

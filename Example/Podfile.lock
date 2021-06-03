@@ -14,20 +14,26 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
-  - FlatAds_sdk (1.0.0):
-    - AFNetworking (= 4.0.1)
-    - FMDB (= 2.6.2)
-    - GoogleAds-IMA-iOS-SDK (= 3.14.3)
-    - Masonry (= 1.1.0)
-    - MJExtension (= 3.2.2)
-    - YYImage/WebP (= 1.0.4)
-    - YYWebImage (= 1.0.5)
+  - FlatAds_sdk (1.0.1):
+    - AFNetworking (~> 4.0.1)
+    - FMDB (~> 2.6.2)
+    - GoogleAds-IMA-iOS-SDK (~> 3.14.3)
+    - Masonry (~> 1.1.0)
+    - MJExtension (~> 3.2.2)
+    - TCFoundation (~> 1.0.1)
+    - YYImage/WebP (~> 1.0.4)
+    - YYWebImage (~> 1.0.5)
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
   - GoogleAds-IMA-iOS-SDK (3.14.3)
   - Masonry (1.1.0)
-  - MJExtension (3.2.2)
+  - MJExtension (3.2.4)
+  - TCFoundation (1.0.1):
+    - AFNetworking (~> 4.0.1)
+    - FMDB (~> 2.6.2)
+    - TCUtil (~> 1.0.2)
+  - TCUtil (1.0.2)
   - YYCache (1.0.4)
   - YYImage (1.0.4):
     - YYImage/Core (= 1.0.4)
@@ -39,22 +45,17 @@ PODS:
     - YYImage
 
 DEPENDENCIES:
-  - AFNetworking (= 4.0.1)
   - FlatAds_sdk (from `../`)
-  - FMDB (= 2.6.2)
-  - GoogleAds-IMA-iOS-SDK (~> 3.14.1)
-  - Masonry (= 1.1.0)
-  - MJExtension (= 3.2.2)
-  - YYImage/WebP (= 1.0.4)
-  - YYWebImage (= 1.0.5)
 
 SPEC REPOS:
-  trunk:
+  https://github.com/Cocoapods/Specs.git:
     - AFNetworking
     - FMDB
     - GoogleAds-IMA-iOS-SDK
     - Masonry
     - MJExtension
+    - TCFoundation
+    - TCUtil
     - YYCache
     - YYImage
     - YYWebImage
@@ -65,15 +66,17 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
-  FlatAds_sdk: 3c2d53e2ae9d084cc47c1a581393c01f0a472687
+  FlatAds_sdk: d3aade082cd2e6e47742a525acba3f517b38a32b
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   GoogleAds-IMA-iOS-SDK: 2a9b7b14bda4993306f05287f952dce41b5be4ad
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  MJExtension: d9b9c74cbdeb724c1e9ecbb157b318276e62e876
+  MJExtension: 88e0900751b6cac8de1cf724ca9838a0b28d5acb
+  TCFoundation: 122a0d9e3d2ae0d6f53a7c0aa37749363f0b5739
+  TCUtil: 817b1e6a8de5a7e411ab9344f542a498c9613296
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
   YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
 
-PODFILE CHECKSUM: ffb4a05ead7ba04f07ef3fa34a6c7fe9adf54b27
+PODFILE CHECKSUM: 70c298d6fa3c0ec891df9da087ae9b8f0d57f3cf
 
 COCOAPODS: 1.10.1

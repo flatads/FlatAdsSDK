@@ -36,6 +36,10 @@ typedef NS_ENUM(NSUInteger, FALogLevel) {
 
 /// Tracking authorization completed. Start loading ads here.
 + (void)requestIDFAWithCompletionHandler:(void(^)(ATTrackingManagerAuthorizationStatus status))completion API_AVAILABLE(ios(14));
+
+/// set additional user information.
++ (void)setUserExtData:(NSString *)data;
+
 @end
 
 NS_ASSUME_NONNULL_END

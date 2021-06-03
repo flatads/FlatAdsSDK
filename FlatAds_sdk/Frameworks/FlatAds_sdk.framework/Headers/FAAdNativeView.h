@@ -76,22 +76,22 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak, nullable) id<FANativeAdViewDelegate> delegate;
 
 /// media view
-@property (nonatomic, readonly, strong) FAMediaView *mediaView;
+@property (nonatomic, strong) FAMediaView *mediaView;
 
 /// logo image
-@property (nonatomic, readonly, strong) UIView *iconView;
+@property (nonatomic, strong) UIView *iconView;
 
 /// ad title
-@property (nonatomic, readonly, strong) UIView *headlineView;
+@property (nonatomic, strong) UIView *headlineView;
 
 /// ad desc
-@property (nonatomic, readonly, strong) UIView *bodyView;
+@property (nonatomic, strong) UIView *bodyView;
 
 /// info button
-@property (nonatomic, readonly, strong) UIView *infoIconView;
+@property (nonatomic, strong) UIView *infoIconView;
 
 /// call to action button
-@property (nonatomic, readonly, strong) UIView *callToActionView;
+@property (nonatomic, strong) UIView *callToActionView;
 
 /// the info Icon expan position
 @property (nonatomic, assign) FAInfoIconButtonExpanPosition expanPosition;

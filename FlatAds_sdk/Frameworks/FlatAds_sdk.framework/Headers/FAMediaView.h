@@ -26,6 +26,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// The media content displayed in the media view.
 @property(nonatomic, strong, nullable) FAMediaContent *mediaContent;
 
+
+- (void)playVideo;
+
 @end
 
 NS_ASSUME_NONNULL_END

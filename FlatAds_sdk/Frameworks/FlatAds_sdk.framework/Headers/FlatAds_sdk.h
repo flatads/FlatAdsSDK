@@ -14,16 +14,18 @@ FOUNDATION_EXPORT double FlatAds_sdkVersionNumber;
 //! Project version string for FlatAds_sdk.
 FOUNDATION_EXPORT const unsigned char FlatAds_sdkVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <FlatAds_sdk/FlatAds_sdk.h>
+// In this header, you should import all the public headers of your framework using statements like #import <FlatAds_sdk/PublicHeader.h>
 
-#import "FlatAdsSDK.h"
+#import <FlatAds_sdk/FlatAdsSDK.h>
 
-#import "FAAdUnitModel.h"
+#import <FlatAds_sdk/FAAdUnitModel.h>
 
-#import "FAAdBannerUnitModel.h"
-#import "FAAdBannerView.h"
+#import <FlatAds_sdk/FAAdBannerUnitModel.h>
+#import <FlatAds_sdk/FAAdBannerView.h>
 
-#import "FAAdNativeView.h"
+#import <FlatAds_sdk/FAAdNativeView.h>
 
-#import "FAInterstitialAd.h"
+#import <FlatAds_sdk/FAInterstitialAd.h>
 
+#import <FlatAds_sdk/FAAdRewardUnitModel.h>
+#import <FlatAds_sdk/FARewardedAd.h>

@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2847900B74BAE9EE717EA5E1 /* Pods_FlatAds_sdk_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B01B8983344E9FC3E1633ADF /* Pods_FlatAds_sdk_Example.framework */; };
+		00A25B1DF05151638827956A /* libPods-FlatAds_sdk_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C412B4AB9B7F12EE4ADDB8E9 /* libPods-FlatAds_sdk_Tests.a */; };
+		377564662F55CEF58001AED1 /* libPods-FlatAds_sdk_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F8916B48F27ADC9438CB99B /* libPods-FlatAds_sdk_Example.a */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -23,7 +24,6 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		D562AA1B14B50E8102B35186 /* Pods_FlatAds_sdk_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F5A17AFA7397368678CDCF9 /* Pods_FlatAds_sdk_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,6 @@
 		2704A2F029D0FA1C294AAE36 /* FlatAds_sdk.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FlatAds_sdk.podspec; path = ../FlatAds_sdk.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		34B6DAA4C4C1A08BD9FFC52F /* Pods-FlatAds_sdk_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlatAds_sdk_Example.debug.xcconfig"; path = "Target Support Files/Pods-FlatAds_sdk_Example/Pods-FlatAds_sdk_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		354A7A6277707CEDDDFD266C /* Pods-FlatAds_sdk_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlatAds_sdk_Tests.debug.xcconfig"; path = "Target Support Files/Pods-FlatAds_sdk_Tests/Pods-FlatAds_sdk_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		5F5A17AFA7397368678CDCF9 /* Pods_FlatAds_sdk_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlatAds_sdk_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* FlatAds_sdk_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlatAds_sdk_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,9 +62,10 @@
 		716ACB021010337F5DA5927C /* Pods-FlatAds_sdk_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlatAds_sdk_Example.release.xcconfig"; path = "Target Support Files/Pods-FlatAds_sdk_Example/Pods-FlatAds_sdk_Example.release.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9F8916B48F27ADC9438CB99B /* libPods-FlatAds_sdk_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FlatAds_sdk_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5B4C3365C5DADCDA8617CE5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		B01B8983344E9FC3E1633ADF /* Pods_FlatAds_sdk_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlatAds_sdk_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B219467FBC5AB05584A868DE /* Pods-FlatAds_sdk_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlatAds_sdk_Tests.release.xcconfig"; path = "Target Support Files/Pods-FlatAds_sdk_Tests/Pods-FlatAds_sdk_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C412B4AB9B7F12EE4ADDB8E9 /* libPods-FlatAds_sdk_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FlatAds_sdk_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E14BF4822CB51283BD9DD475 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,7 +77,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				2847900B74BAE9EE717EA5E1 /* Pods_FlatAds_sdk_Example.framework in Frameworks */,
+				377564662F55CEF58001AED1 /* libPods-FlatAds_sdk_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +88,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				D562AA1B14B50E8102B35186 /* Pods_FlatAds_sdk_Tests.framework in Frameworks */,
+				00A25B1DF05151638827956A /* libPods-FlatAds_sdk_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,8 +123,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				B01B8983344E9FC3E1633ADF /* Pods_FlatAds_sdk_Example.framework */,
-				5F5A17AFA7397368678CDCF9 /* Pods_FlatAds_sdk_Tests.framework */,
+				9F8916B48F27ADC9438CB99B /* libPods-FlatAds_sdk_Example.a */,
+				C412B4AB9B7F12EE4ADDB8E9 /* libPods-FlatAds_sdk_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -368,25 +368,11 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FlatAds_sdk_Example/Pods-FlatAds_sdk_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
-				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
 				"${PODS_ROOT}/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework",
-				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
-				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
-				"${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework",
-				"${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework",
-				"${BUILT_PRODUCTS_DIR}/YYWebImage/YYWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleInteractiveMediaAds.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCache.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
