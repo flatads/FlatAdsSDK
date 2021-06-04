@@ -45,7 +45,7 @@ Pod::Spec.new do |s|
 
     s.vendored_frameworks = "FlatAds_sdk/**/*.{framework}"
     
-    s.dependency "TCFoundation", "~> 1.0.4"
+    s.dependency "TCFoundation", "~> 1.0.3"
   
     s.dependency "MJExtension", "~> 3.2.2"
     s.dependency "Masonry", "~> 1.1.0"
