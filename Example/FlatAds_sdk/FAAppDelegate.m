@@ -19,6 +19,8 @@
     // Override point for customization after application launch.
 
 //    [FlatAdTCRawDataRequestSerializer.oSDK setAppID:@"" appToken:@""];
+    NSString * version = [FlatAdsSDK sdkVersion];
+    
     return YES;
 }
 
