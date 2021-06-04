@@ -1,6 +1,6 @@
 {
   "name": "FlatAds_sdk",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "summary": "Flat Ads SDK for iOS",
   "description": "Flat Ads SDK for iOS",
   "homepage": "https://github.com/flatads/FlatAdsSDK",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/flatads/FlatAdsSDK.git",
-    "tag": "1.0.4"
+    "tag": "1.0.6"
   },
   "libraries": "c++",
   "requires_arc": true,
@@ -44,14 +44,8 @@
   },
   "vendored_frameworks": "FlatAds_sdk/**/*.{framework}",
   "dependencies": {
-    "AFNetworking": [
-      "~> 4.0.1"
-    ],
-    "FMDB": [
-      "~> 2.6.2"
-    ],
     "TCFoundation": [
-      "~> 1.0.2"
+      "~> 1.0.3"
     ],
     "MJExtension": [
       "~> 3.2.2"
