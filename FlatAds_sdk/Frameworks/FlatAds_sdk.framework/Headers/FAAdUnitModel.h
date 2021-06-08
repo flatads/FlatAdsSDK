@@ -25,6 +25,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// Request parameter expansion.
 @property (nonatomic, copy) NSDictionary *appendInfo;
 
+/// unique id
+@property (nonatomic, readonly, copy) NSString *uniqueId;
+
 @end
 
 NS_ASSUME_NONNULL_END

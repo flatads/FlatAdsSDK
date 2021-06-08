@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *customerId;
 
 /// A rewarded unique id
-@property (nonatomic, copy) NSString *uniqueId;
+@property (nonatomic, copy) NSString *rewardedUniqueId;
 
 /// The type of currency the user is receiving.
 @property(nonatomic, copy) NSString *type;
