@@ -207,8 +207,8 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				DE31716D25002C8E5D6604F4 /* [CP] Embed Pods Frameworks */,
-				32358FED07552951564DE779 /* [CP] Copy Pods Resources */,
+				A9EEEF7382520C2B7458F57F /* [CP] Embed Pods Frameworks */,
+				696DD12A38B71FF9F35EBC33 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,7 +249,7 @@
 				ORGANIZATIONNAME = flatads;
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
-						DevelopmentTeam = ZUB5R54JHK;
+						DevelopmentTeam = JK2FSX2RGZ;
 					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
@@ -299,24 +299,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		32358FED07552951564DE779 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FlatAds_sdk_Example/Pods-FlatAds_sdk_Example-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/FlatAds_sdk/FlatAds_sdk.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FlatAds_sdk.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlatAds_sdk_Example/Pods-FlatAds_sdk_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		420D5ADACF9DFB050A82E023 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -361,7 +343,25 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DE31716D25002C8E5D6604F4 /* [CP] Embed Pods Frameworks */ = {
+		696DD12A38B71FF9F35EBC33 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlatAds_sdk_Example/Pods-FlatAds_sdk_Example-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FlatAds_sdk/FlatAds_sdk.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FlatAds_sdk.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlatAds_sdk_Example/Pods-FlatAds_sdk_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9EEEF7382520C2B7458F57F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -522,7 +522,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = ZUB5R54JHK;
+				DEVELOPMENT_TEAM = JK2FSX2RGZ;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FlatAds_sdk/FlatAds_sdk-Prefix.pch";
@@ -543,7 +543,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = ZUB5R54JHK;
+				DEVELOPMENT_TEAM = JK2FSX2RGZ;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FlatAds_sdk/FlatAds_sdk-Prefix.pch";

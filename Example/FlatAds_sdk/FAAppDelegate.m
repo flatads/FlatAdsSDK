@@ -7,9 +7,9 @@
 //
 
 #import "FAAppDelegate.h"
-#import <TCFoundation/TCFoundation.h>
+//#import <TCFoundation/TCFoundation.h>
 
-#import <FlatAds_sdk/FlatAds_sdk.h>
+//#import <FlatAds_sdk/FlatAds_sdk.h>
 
 
 @implementation FAAppDelegate
@@ -19,7 +19,7 @@
     // Override point for customization after application launch.
 
 //    [FlatAdTCRawDataRequestSerializer.oSDK setAppID:@"" appToken:@""];
-    NSString * version = [FlatAdsSDK sdkVersion];
+//    NSString * version = [FlatAdsSDK sdkVersion];
     
     return YES;
 }
