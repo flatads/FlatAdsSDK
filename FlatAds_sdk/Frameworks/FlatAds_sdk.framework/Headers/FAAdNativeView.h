@@ -25,8 +25,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface FANativeAd : NSObject
 
-/// Ad unit id
-@property (nonatomic, readonly, copy, nullable) NSString *unitId;
+/// Ad unit model
+@property (nonatomic, readonly, strong, nullable) FAAdUnitModel *unitModel;
 
 /// Icon image.
 @property (nonatomic, readonly, strong, nullable) FAImageInfoModel *icon;
