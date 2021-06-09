@@ -7,11 +7,11 @@
 //
 
 #import "FAViewController.h"
-//#import <FlatAds_sdk/FlatAds_sdk.h>
+#import <FlatAds_sdk/FlatAds_sdk.h>
 
-@interface FAViewController ()//<FAAdInterstitialDelegate>
+@interface FAViewController ()<FAAdInterstitialDelegate>
 
-//@property (nonatomic, strong) FAInterstitialAd *interstitialAd;
+@property (nonatomic, strong) FAInterstitialAd *interstitialAd;
 
 @end
 
@@ -21,20 +21,20 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-//    FAAdUnitModel* unitModel = [FAAdUnitModel new];
-//    unitModel.unitId = @"";
-//
-//    [FAInterstitialAd loadWithAdUnitModel:unitModel
-//                        completionHandler:^(FAInterstitialAd * _Nullable interstitialAd, NSError * _Nullable error) {
-//        if (error) {
-//
-//        } else {
-//            interstitialAd.delegate = self;
-//            [interstitialAd presentAdFromRootViewController:self];
-//            self.interstitialAd = interstitialAd;
-//        }
-//    }];
-//
+    FAAdUnitModel* unitModel = [FAAdUnitModel new];
+    unitModel.unitId = @"9a0b4ae0-a0dd-11eb-960e-690ffa82dfb0";
+
+    [FAInterstitialAd loadWithAdUnitModel:unitModel
+                        completionHandler:^(FAInterstitialAd * _Nullable interstitialAd, NSError * _Nullable error) {
+        if (error) {
+
+        } else {
+            interstitialAd.delegate = self;
+            [interstitialAd presentAdFromRootViewController:self];
+            self.interstitialAd = interstitialAd;
+        }
+    }];
+
 }
 
 // This method is called when adView ad slot failed to load.
