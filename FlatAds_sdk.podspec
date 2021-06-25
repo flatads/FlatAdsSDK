@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name         = "FlatAds_sdk"
-    s.version      = "1.0.7"
+    s.version      = "1.1.0"
     s.summary      = "Flat Ads SDK for iOS"
     s.description  = <<-DESC
                        Flat Ads SDK for iOS
@@ -45,7 +45,7 @@ Pod::Spec.new do |s|
 
     s.vendored_frameworks = "FlatAds_sdk/**/*.{framework}"
     
-    s.dependency "TCFoundation", "~> 1.0.3"
+    s.dependency "TCFoundation", "~> 1.0"
   
     s.dependency "MJExtension", "~> 3.2.2"
     s.dependency "Masonry", "~> 1.1.0"

@@ -14,11 +14,11 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
-  - FlatAds_sdk (1.0.7):
+  - FlatAds_sdk (1.1.0):
     - GoogleAds-IMA-iOS-SDK (~> 3.14.3)
     - Masonry (~> 1.1.0)
     - MJExtension (~> 3.2.2)
-    - TCFoundation (~> 1.0.3)
+    - TCFoundation (~> 1.0)
     - YYImage/WebP (~> 1.0.4)
     - YYWebImage (~> 1.0.5)
   - FMDB (2.7.5):
@@ -64,7 +64,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
-  FlatAds_sdk: 24b1bcd7733d4b1d88164b3ada6efb6268b78025
+  FlatAds_sdk: 034e725c8bfba89786c2c014df2d7ea1ead784a4
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   GoogleAds-IMA-iOS-SDK: 2a9b7b14bda4993306f05287f952dce41b5be4ad
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201

@@ -26,7 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSDictionary *appendInfo;
 
 /// unique id
-@property (nonatomic, readonly, copy) NSString *uniqueId;
+@property (nonatomic, copy, nullable) NSString *token;
 
 @end
 
